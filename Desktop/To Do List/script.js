@@ -51,7 +51,7 @@ function handleTaskClick(e) {
   if (e.target.classList.contains('delete-btn')) {
     const taskItem = e.target.parentElement;
     const taskText = taskItem.querySelector('span').textContent;
-    const newTaskDel = prompt("Are You Sure You Want To Deleted", taskText)
+    const newTaskDel = prompt("Are You Sure You Want To Delete", taskText)
     deleteTask(newTaskDel);
     taskItem.remove();
   }
